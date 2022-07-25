@@ -3,10 +3,10 @@ from os import system
 from replit import audio
 
 main_message = """
-+: volume up
--: volume down
-k: add loop
-j: remove loop
++: vol up
+-: vol down
+k: repeat
+j: single track
 <space>: play/pause
 """
 
