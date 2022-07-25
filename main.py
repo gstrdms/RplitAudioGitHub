@@ -7,6 +7,7 @@ main_message = """
 -: vol down
 k: repeat
 j: single track
+r: time remaining
 <space>: play/pause
 """
 
@@ -40,6 +41,8 @@ def main():
             source.set_loop(source.loops_remaining - 1)
         elif choice == " ":
             source.paused = not source.paused
+        elif choice == "r":
+            source.get_remaining()
         show_status(source)
 
 main()
